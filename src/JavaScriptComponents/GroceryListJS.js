@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./App.css";
+import "../App.css";
 import Item from "./Item";
 import { v4 as uuidv4 } from "uuid";
 
-function App() {
+function GroceryListJS() {
     const [item, setItem] = useState("");
     const [edit, setEdit] = useState(false);
     const [editId, setEditId] = useState();
@@ -81,4 +81,4 @@ function App() {
     );
 }
 
-export default App;
+export default GroceryListJS;

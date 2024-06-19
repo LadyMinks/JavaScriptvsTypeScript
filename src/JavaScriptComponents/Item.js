@@ -1,5 +1,5 @@
 import React from "react";
-import "./Item.css";
+import "../Item.css";
 
 const Item = ({
                   id,
@@ -61,7 +61,7 @@ const Item = ({
                     }}}>
                 edit
             </button>
-            
+
             <button
                 onClick={() => handleComplete(id)}>
                 check
