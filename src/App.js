@@ -51,8 +51,7 @@ function App() {
                     type="text"
                     value={item}
                     placeholder="Enter the items"
-                    onChange={handleChange}
-                />
+                    onChange={handleChange}/>
                 {edit ? (
                     <button className="btn" type="submit">
                         Edit Item
@@ -63,6 +62,7 @@ function App() {
                     </button>
                 )}
             </form>
+
             <div>
                 {list.map((e, id) => (
                     <Item
@@ -74,8 +74,7 @@ function App() {
                         complete={e.complete}
                         setItem={setItem}
                         setEdit={setEdit}
-                        setEditId={setEditId}
-                    />
+                        setEditId={setEditId}/>
                 ))}
             </div>
         </div>
