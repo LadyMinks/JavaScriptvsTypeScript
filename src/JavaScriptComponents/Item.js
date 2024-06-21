@@ -55,10 +55,11 @@ const Item = ({
             />
 
             <button onClick={() => {
-                    const confirmBox = window.confirm("Do you want to edit this item?");
-                    if (confirmBox === true) {
-                        handleItem(id);
-                    }}}>
+                const confirmBox = window.confirm("Do you want to edit this item?");
+                if (confirmBox === true) {
+                    handleItem(id);
+                }
+            }}>
                 edit
             </button>
 
@@ -68,12 +69,13 @@ const Item = ({
             </button>
 
             <button onClick={() => {
-                    const confirmBox = window.confirm(
-                        "Are you sure you want to delete this item?"
-                    );
-                    if (confirmBox === true) {
-                        remove(id);
-                    }}}>
+                const confirmBox = window.confirm(
+                    "Are you sure you want to delete this item?"
+                );
+                if (confirmBox === true) {
+                    remove(id);
+                }
+            }}>
                 remove
             </button>
         </div>

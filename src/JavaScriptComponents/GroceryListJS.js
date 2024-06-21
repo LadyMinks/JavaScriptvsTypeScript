@@ -44,7 +44,7 @@ function GroceryListJS() {
 
     return (
         <div className="App">
-            <h1>Grocery List</h1>
+            <h1>Grocery List JS</h1>
             <form onSubmit={handleSubmit}>
                 <input
                     className="input"
@@ -52,15 +52,11 @@ function GroceryListJS() {
                     value={item}
                     placeholder="Enter the items"
                     onChange={handleChange}/>
-                {edit ? (
-                    <button className="btn" type="submit">
-                        Edit Item
-                    </button>
-                ) : (
-                    <button className="btn" type="submit">
-                        Add Item
-                    </button>
-                )}
+
+                <button className="btn" type="submit">
+                    {edit ? "Edit Item" : "Add Item"}
+                </button>
+
             </form>
 
             <div>
